@@ -20,8 +20,8 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/kylelemons/gousb/usb"
-	"github.com/kylelemons/gousb/usbid"
+	. "github.com/thorduri/go-libusb/usb"
+	"github.com/thorduri/go-libusb/usbid"
 )
 
 func TestNoop(t *testing.T) {

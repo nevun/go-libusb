@@ -15,7 +15,7 @@
 package usb
 
 // To enable internal debugging:
-//   -ldflags "-X github.com/kylelemons/gousb/usb.debugInternal true"
+//   -ldflags "-X github.com/thorduri/go-libusb/usb.debugInternal true"
 
 import (
 	"io"
