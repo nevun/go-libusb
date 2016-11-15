@@ -17,16 +17,6 @@ Supported platforms include:
 [docimg]: https://godoc.org/github.com/kylelemons/gousb?status.svg
 [doc]:    https://godoc.org/github.com/kylelemons/gousb
 
-Contributing
-============
-Because I am a Google employee, contributing to this project will require signing the [Google CLA][cla].
-This is the same agreement that is required for contributing to Go itself, so if you have
-already filled it out for that, you needn't fill it out again.
-You will need to send me the email address that you used to sign the agreement
-so that I can verify that it is on file before I can accept pull requests.
-
-[cla]: https://cla.developers.google.com/
-
 Installation on Linux
 =====================
 
