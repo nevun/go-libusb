@@ -60,10 +60,6 @@ func (e *endpoint) Info() EndpointInfo        { return e.EndpointInfo }
 // TODO(kevlar): (*Endpoint).Close
 
 func bulk_xfer(e *endpoint, buf []byte, timeout time.Duration) (int, error) {
-	if len(buf) == 0 {
-		return 0, nil
-	}
-
 	data := (*reflect.SliceHeader)(unsafe.Pointer(&buf)).Data
 
 	var cnt C.int
