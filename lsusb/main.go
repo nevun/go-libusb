@@ -77,7 +77,7 @@ func main() {
 		}
 	}()
 
-	// ListDevices can occaionally fail, so be sure to check its return value.
+	// ListDevices can occasionally  fail, so be sure to check its return value.
 	if err != nil {
 		log.Fatalf("list: %s", err)
 	}
