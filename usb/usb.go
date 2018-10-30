@@ -15,8 +15,12 @@
 // Package usb provides a wrapper around libusb-1.0.
 package usb
 
-// #cgo LDFLAGS: -lusb-1.0
-// #include <libusb-1.0/libusb.h>
+/*
+#cgo pkg-config: libusb-1.0
+#include <libusb.h>
+
+void gousb_set_debug(libusb_context *ctx, int lvl);
+*/
 import "C"
 
 import (
@@ -31,7 +35,7 @@ type Context struct {
 }
 
 func (c *Context) Debug(level int) {
-	C.libusb_set_debug(c.ctx, C.int(level))
+	C.gousb_set_debug(c.ctx, C.int(level))
 }
 
 func NewContext() *Context {
